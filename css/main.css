@@ -944,9 +944,11 @@ body {
   font-weight: normal;
 }
 .subsite-titleleon {
+  position: relative;
+  left: 20%;
   display: inline-block;
   vertical-align: top;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 15px;
   font-weight: normal;
 }
@@ -1178,7 +1180,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b07ed5;
+  background: #b30b4b;
 }
 .sidebar-nav {
   margin: 0;
