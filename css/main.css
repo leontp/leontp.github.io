@@ -945,7 +945,8 @@ body {
 }
 .subsite-titleleon {
   display: inline-block;
-  position: 50%;
+  position: relative;
+  left: 50%;
   vertical-align: top;
   line-height: 25px;
   font-size: 12px;
@@ -1179,7 +1180,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b4a6a7;
+  background: #6caba2;
 }
 .sidebar-nav {
   margin: 0;
