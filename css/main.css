@@ -949,9 +949,10 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  line-height: 36px;
-  font-size: 12px;
+  line-height: 30px;
+  font-size: 14px;
   font-weight: normal;
+  font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1181,7 +1182,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff7c9;
+  background: #ff3ce4;
 }
 .sidebar-nav {
   margin: 0;
