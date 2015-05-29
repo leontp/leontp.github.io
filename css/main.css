@@ -947,7 +947,7 @@ body {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
 }
 .use-motion .brand {
@@ -1178,7 +1178,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0dfa;
+  background: #ffa8ff;
 }
 .sidebar-nav {
   margin: 0;
