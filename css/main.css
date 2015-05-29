@@ -949,7 +949,7 @@ body {
   display: inline-block;
   vertical-align: top;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
 }
 .use-motion .brand {
@@ -1180,7 +1180,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b30b4b;
+  background: #f041ff;
 }
 .sidebar-nav {
   margin: 0;
