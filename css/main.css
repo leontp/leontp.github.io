@@ -945,11 +945,11 @@ body {
 }
 .subsite-titleleon {
   position: relative;
-  left: 23%;
+  left: 15%;
   display: inline-block;
   vertical-align: top;
   line-height: 25px;
-  font-size: 12px;
+  font-size: 10%;
   font-weight: normal;
 }
 .use-motion .brand {
@@ -1180,7 +1180,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d2ff87;
+  background: #0dffd5;
 }
 .sidebar-nav {
   margin: 0;
