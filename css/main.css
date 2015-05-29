@@ -945,10 +945,10 @@ body {
 }
 .subsite-titleleon {
   position: relative;
-  left: 20%;
+  left: 22%;
   display: inline-block;
   vertical-align: top;
-  line-height: 30px;
+  line-height: 25px;
   font-size: 12px;
   font-weight: normal;
 }
@@ -1180,7 +1180,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f041ff;
+  background: #c969b6;
 }
 .sidebar-nav {
   margin: 0;
