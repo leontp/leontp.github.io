@@ -153,8 +153,118 @@
         <p><img src="/img/markdown.png" alt="Markdown" width="20%" style="position:relative; left:40%; border:0px;"></p>
 <blockquote class="blockquote-center">Markdown是一种轻量级的标记语言，通过一定的语法，它可以使普通的文本文件具有一定的格式。其目标是<strong>易写易读</strong>，语法非常简单，学习容易，一旦熟能生巧之后，会有一劳永逸的效果。</blockquote>
 
-<a id="more"></a>
-<h1 id="1-为什么要学习Markdown语言">1.为什么要学习Markdown语言</h1><h1 id="2-Markdown基本语法规则">2.Markdown基本语法规则</h1><h1 id="3-Markdown常用编辑器">3.Markdown常用编辑器</h1><h1 id="4-废话">4.废话</h1>
+<h2 id="<!-more->"><a id="more"></a></h2><h1 id="1-为什么要学习Markdown语言">1.为什么要学习Markdown语言</h1><p>正如前面所说，Markdown是一款<strong>轻量级标记语言</strong>，它用简洁的语法代替了排版，使我们不再烦恼于word或pages那些繁琐的字体格式设置。从内容到格式，从插图到链接，都可以通过键盘输入，从而使我们专注于写作。写作完成的Markdown文章可以导出为<em>HTML</em>格式发布到网上，也可以通过衍生功能导出个更多的格式，如<em>LaTex</em>,<em>PDF</em>等。如果你有一份使用Markdown制作的线上&amp;线下简历，HR一定会对你<strong>好感大增</strong>。目前Markdown得到了来自于Ruby和Github社区的大力支持，很多网站（如<a href="http://www.jianshu.com" target="_blank" rel="external">简书</a>），世界上最流行的博客平台WordPress和大型CMS如Joomla、Drupal都能很好的支持Markdown。</p>
+<h2 id="Markdown的优点">Markdown的优点</h2><ul>
+<li>基于纯文本格式，可以用任何文本编辑器编辑。相比纯文本格式拥有更丰富的格式，可以插入图片链接。</li>
+<li>相对于word而言，使用Markdown进行写作，让你更专注于你的内容，而不会为排版分心。采用Markdown编辑的文件可读可写，而word文档中含有很多格式数据，只能借助少数工具读取。</li>
+<li>学习成本低廉，常用语法规则非常少，记忆负担小。如果你接触过html语言，那么学习成本接近于零。</li>
+<li>语言拓展性强，通过各种衍生版本可以实现各种拓展功能。</li>
+<li>可以导出多种格式的文件，主流网站的支持度好。</li>
+</ul>
+<h1 id="2-Markdown编辑器">2.Markdown编辑器</h1><p><img src="/img/mou.png" alt="Markdown" width="20%" style="position:relative; left:40%; border:0px;"></p>
+<p>如果你正在使用的系统使Mac OS X，那么我十分推荐你使用这款免费又十分好用的<a href="http://25.io/mou/" target="_blank" rel="external">Mou</a>编辑器。该浏览器支持实时预览功能，下图就是编辑界面。</p>
+<p><img src="/img/mou1.png" alt="Markdown" width="90%" style="position:relative; left:5%; border:0px;"><br>另外在window平台下也有很多类似的编辑器可以选择，大家可以自己去搜索。web上，<a href="http://jianshu.io/" target="_blank" rel="external">简书</a>是一个很好的网站，有很多优美的文章，有兴趣的话也可以自己创作，编辑语言用的就是Markdown。</p>
+<h1 id="3-Markdown基本语法规则">3.Markdown基本语法规则</h1><h2 id="推荐文档">推荐文档</h2><ul>
+<li><a href="http://wowubuntu.com/markdown/#list" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li>
+</ul>
+<h2 id="基本语法">基本语法</h2><h3 id="a-标题">a.标题</h3><p>代码：</p>
+<pre><code><span class="preprocessor"># 一级标题</span>
+<span class="preprocessor">## 二级标题</span>
+...
+<span class="preprocessor">###### 最多六级标题</span>
+</code></pre><p>效果：</p>
+<h1 id="一级标题">一级标题</h1><h2 id="二级标题">二级标题</h2><p>…</p>
+<h6 id="六级标题">六级标题</h6><p>如前面所示，只要在行首加若干<code>#</code>就可以代表不同等级的标题，Markdown最多提供了六级标题设置。</p>
+<h3 id="b-列表">b.列表</h3><p>代码：</p>
+<pre><code>-<span class="ruby"> 无序列表
+</span>-<span class="ruby"> 无序列表
+</span>-<span class="ruby"> 无序列表
+</span>
+1. 有序列表
+2. 有序列表
+3. 层级列表
+
+-<span class="ruby"> 分级列表
+</span>    + 分级列表
+    + 分级列表
+-<span class="ruby"> 分级列表</span>
+</code></pre><p>效果：</p>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>层级列表</li>
+</ol>
+<ul>
+<li>分级列表<ul>
+<li>分级列表</li>
+<li>分级列表</li>
+</ul>
+</li>
+<li>分级列表</li>
+</ul>
+<p>在Markdown中只要在行首加入<code>-</code>，<code>1.</code>就可以分别实现无序列表和有序列表。符号和文字之间要要存在一个空格。</p>
+<h3 id="c-引用">c.引用</h3><p>代码：</p>
+<pre><code><span class="blockquote">&gt; 天行健，君子以自强不息。</span>
+</code></pre><p>效果：</p>
+<blockquote>
+<p>天行健，君子以自强不息。</p>
+</blockquote>
+<p>在Markdown中，只需要在文字前加入<code>&gt;</code>就可以实现引用的效果。</p>
+<h3 id="d-代码块">d.代码块</h3><p>代码：</p>
+<pre><code><span class="variable"><span class="keyword">var</span> i</span> = <span class="string">"Hello, "</span>;
+<span class="variable"><span class="keyword">var</span> j</span> = <span class="string">"World!"</span>;
+echo i.j;
+</code></pre><p>效果：</p>
+<pre><code><span class="variable"><span class="keyword">var</span> i</span> = <span class="string">"Hello, "</span>;
+<span class="variable"><span class="keyword">var</span> j</span> = <span class="string">"World!"</span>;
+echo i.j;
+</code></pre><p>作为一个程序员，代码框对于我们来说时必不可少的工具，在Markdown中代码块十分容易实现。上面效果不是很明显，代码块的实际语法是在行首加入<code>四个空格</code>，那么此行的内容就都会出现在代码块中</p>
+<h3 id="e-粗体和斜体">e.粗体和斜体</h3><p>代码：</p>
+<pre><code><span class="keyword">*</span><span class="keyword">*</span>这是粗体<span class="keyword">*</span><span class="keyword">*</span>
+
+<span class="keyword">*</span>这是斜体<span class="keyword">*</span>
+</code></pre><p>效果：</p>
+<p><strong>这是粗体</strong></p>
+<p><em>这是斜体</em></p>
+<p>Markdown中的粗体和斜体的实现非常简单，当使用将<code>**</code>文字包围在中间时，文字就会变成粗体，当使用<code>*</code>将文字包围在中间时，文字就会变成斜体。</p>
+<h3 id="f-空格，换行，分割线">f.空格，换行，分割线</h3><p>代码：</p>
+<pre><code>一个回车
+视为空格
+
+两个以上的回车
+
+才能分段
+
+行尾两个空格  
+也可以换行
+
+<span class="header">这代表分割线
+---</span>
+</code></pre><p>效果：</p>
+<p>一个回车<br>视为空格</p>
+<p>两个以上的回车</p>
+<p>才能分段</p>
+<p>两个空格<br>可以换行</p>
+<p>这代表分割线</p>
+<hr>
+<h3 id="g-链接与图片">g.链接与图片</h3><p>代码：</p>
+<pre><code>[<span class="link_label">这是超链接</span>](<span class="link_url">http://www.wanghao365.com</span>)
+
+[<span class="link_label">!这是图片链接</span>](<span class="link_url">/img/WangHao++.png</span>)
+</code></pre><p>效果：</p>
+<p><a href="http://www.wanghao365.com" target="_blank" rel="external">这是超链接</a></p>
+<p><img src="/img/WangHao++.png" alt="这是图片链接"></p>
+<p>图片与链接的格式十分相似，只需要在前面加入一个<code>!</code>就可以实现。</p>
+<h3 id="h-直接插入HTML">h.直接插入HTML</h3><p>在Markdown文件中，可以在新的段落<code>直接</code>插入html语句，这对于熟悉html的程序员们真是超级方便。当觉得Markdown提供的格式已经不能满足你的需求的时候，直接书写html来实现想要的效果，这使得markdown文件具有了各种可能性。</p>
+<h1 id="4-小结">4.小结</h1><p>以上就是Markdown的基本介绍，提供的不到10个基本语法已经可以满足日常书写的基本需要了。Markdown虽然简单，但终究是一门语言，想要随心所欲的应用还是需要多加练习。当你能够熟练掌握的时候，一定能体会到专注写东西的乐趣。</p>
+<hr>
+<h1 id="5-废话">5.废话</h1><p>一直想着折腾一个自己的独立博客，在纠结了很多方案之后，考虑再三最后还是选择用Hexo来搭建，jekyll，wordpress什么的还是以后慢慢折腾好了。Hexo写博客需要使用Markdown，于是我就学了。以上的这篇文章其实是笔者第一次使用Markdown<code>XD</code>，一半算是练手，一半算是经验分享，有什么不对的地方还请大家批评指出。这个语言半个小时就能学会，写出来的东西也很漂亮，还是很值得学习的。</p>
+
       
     </div>
 
@@ -265,7 +375,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-为什么要学习Markdown语言"><span class="nav-number">1.</span> <span class="nav-text">1.为什么要学习Markdown语言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Markdown基本语法规则"><span class="nav-number">2.</span> <span class="nav-text">2.Markdown基本语法规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Markdown常用编辑器"><span class="nav-number">3.</span> <span class="nav-text">3.Markdown常用编辑器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-废话"><span class="nav-number">4.</span> <span class="nav-text">4.废话</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#<!-more->"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-为什么要学习Markdown语言"><span class="nav-number"></span> <span class="nav-text">1.为什么要学习Markdown语言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的优点"><span class="nav-number">1.</span> <span class="nav-text">Markdown的优点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Markdown编辑器"><span class="nav-number"></span> <span class="nav-text">2.Markdown编辑器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Markdown基本语法规则"><span class="nav-number"></span> <span class="nav-text">3.Markdown基本语法规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐文档"><span class="nav-number">1.</span> <span class="nav-text">推荐文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">2.</span> <span class="nav-text">基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-标题"><span class="nav-number">2.1.</span> <span class="nav-text">a.标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-列表"><span class="nav-number">1.1.</span> <span class="nav-text">b.列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-引用"><span class="nav-number">1.2.</span> <span class="nav-text">c.引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-代码块"><span class="nav-number">1.3.</span> <span class="nav-text">d.代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-粗体和斜体"><span class="nav-number">1.4.</span> <span class="nav-text">e.粗体和斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-空格，换行，分割线"><span class="nav-number">1.5.</span> <span class="nav-text">f.空格，换行，分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#g-链接与图片"><span class="nav-number">1.6.</span> <span class="nav-text">g.链接与图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#h-直接插入HTML"><span class="nav-number">1.7.</span> <span class="nav-text">h.直接插入HTML</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-小结"><span class="nav-number"></span> <span class="nav-text">4.小结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-废话"><span class="nav-number"></span> <span class="nav-text">5.废话</span></a></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
