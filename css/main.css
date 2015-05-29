@@ -944,12 +944,11 @@ body {
   font-weight: normal;
 }
 .subsite-titleleon {
-  position: relative;
-  left: 15%;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   line-height: 25px;
-  font-size: 10%;
+  font-size: 12px;
   font-weight: normal;
 }
 .use-motion .brand {
@@ -1180,7 +1179,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0dffd5;
+  background: #96ff8b;
 }
 .sidebar-nav {
   margin: 0;
