@@ -10,6 +10,7 @@ $(document).ready(function() {
   });
 });
 $('.fancybox').fancybox({
+  opacity: true,
   helpers: {
     overlay: {
       locked: false
