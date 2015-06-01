@@ -9,4 +9,10 @@ $(document).ready(function() {
     $imageWrapLink.addClass('fancybox');
   });
 });
-
+$('.fancybox').fancybox({
+  helpers: {
+    overlay: {
+      locked: false
+    }
+  }
+});
